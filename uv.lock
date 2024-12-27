@@ -600,6 +600,19 @@ wheels = [
 ]
 
 [[package]]
+name = "gigachat"
+version = "0.1.36"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "httpx" },
+    { name = "pydantic" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/2b/ab/56d332407b0621f34d1d60b414795de32f2158c3be1f39833952e4b357a5/gigachat-0.1.36.tar.gz", hash = "sha256:6c10ae23647946854ef98d67899e2ef239a6f675e4e1406ff08f8d56fc2160d6", size = 28342 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/09/e9/3e5e8ccbf8e77cb6b592bd3afbf6141b3fe208f1e774d15adf858c5e6a1d/gigachat-0.1.36-py3-none-any.whl", hash = "sha256:7e9e3192e8d33e9c63beac533a31290d1a2e7b1b3c57ea0b5dc26da47551db5d", size = 61591 },
+]
+
+[[package]]
 name = "google-auth"
 version = "2.36.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1670,6 +1683,9 @@ dependencies = [
 anthropic = [
     { name = "anthropic" },
 ]
+gigachat = [
+    { name = "gigachat" },
+]
 groq = [
     { name = "groq" },
 ]
@@ -1705,6 +1721,7 @@ dev = [
 requires-dist = [
     { name = "anthropic", marker = "extra == 'anthropic'", specifier = ">=0.40.0" },
     { name = "eval-type-backport", specifier = ">=0.2.0" },
+    { name = "gigachat", marker = "extra == 'gigachat'", specifier = ">=0.1.36" },
     { name = "google-auth", marker = "extra == 'vertexai'", specifier = ">=2.36.0" },
     { name = "griffe", specifier = ">=1.3.2" },
     { name = "groq", marker = "extra == 'groq'", specifier = ">=0.12.0" },

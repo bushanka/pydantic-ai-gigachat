@@ -42,6 +42,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+gigachat = ["gigachat>=0.1.36"]
 openai = ["openai>=1.54.3"]
 vertexai = ["google-auth>=2.36.0", "requests>=2.32.3"]
 anthropic = ["anthropic>=0.40.0"]
